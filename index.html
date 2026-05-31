@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CattleCounter Support</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, Helvetica Neue, Arial, sans-serif; background: #f9f9f7; color: #1a1a18; }
+  header { background: #fff; border-bottom: 1px solid #e8e8e4; padding: 20px 0; }
+  .inner { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+  header .inner { display: flex; align-items: center; gap: 14px; }
+  .logo { width: 44px; height: 44px; background: #1D9E75; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo svg { width: 26px; height: 26px; fill: #fff; }
+  header h1 { font-size: 20px; font-weight: 600; }
+  header p { font-size: 13px; color: #666; }
+  main { padding: 40px 0; }
+  h2 { font-size: 18px; font-weight: 600; margin-bottom: 16px; color: #111; }
+  .card { background: #fff; border: 1px solid #e8e8e4; border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+  .card h3 { font-size: 15px; font-weight: 600; margin-bottom: 8px; color: #111; }
+  .card p { font-size: 14px; line-height: 1.65; color: #444; }
+  .contact-box { background: #E1F5EE; border: 1px solid #9FE1CB; border-radius: 12px; padding: 24px; text-align: center; margin-bottom: 40px; }
+  .contact-box p { font-size: 14px; color: #0F6E56; margin-bottom: 12px; }
+  .contact-box a { display: inline-block; background: #1D9E75; color: #fff; text-decoration: none; padding: 10px 24px; border-radius: 8px; font-size: 14px; font-weight: 500; }
+  .contact-box a:hover { background: #0F6E56; }
+  footer { border-top: 1px solid #e8e8e4; padding: 20px 0; text-align: center; font-size: 12px; color: #999; }
+  footer a { color: #1D9E75; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+      </svg>
+    </div>
+    <div>
+      <h1>CattleCounter</h1>
+      <p>Support &amp; Help</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="inner">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="card">
+      <h3>What image formats does CattleCounter support?</h3>
+      <p>CattleCounter supports DNG (raw), JPEG, and PNG images. DNG files from drone cameras are processed at full native resolution for best detection accuracy.</p>
+    </div>
+
+    <div class="card">
+      <h3>Does CattleCounter require an internet connection?</h3>
+      <p>No. All detection runs entirely on your iPad using the Apple Neural Engine. CattleCounter works anywhere you fly — no Wi-Fi or cellular required.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I use the Pen Boundary tool?</h3>
+      <p>Tap the Define Pen Area button in the Auto-Count menu, then draw a rectangle around your animal pen by dragging with your finger or Apple Pencil. The detector will only count animals inside the boundary. Tap Clear Pen Area to remove it.</p>
+    </div>
+
+    <div class="card">
+      <h3>The auto-count missed some animals. What should I do?</h3>
+      <p>Use the manual annotation tools to add bounding boxes around any missed animals. Every correction you make is stored with your session and can be exported as training data to improve the model over time.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I export training data?</h3>
+      <p>After annotating your session, tap the Export button and select Training Export. CattleCounter will generate a complete YOLO-compatible dataset including images, labels, and a data.yaml file ready for training.</p>
+    </div>
+
+    <div class="card">
+      <h3>Which iPad models are supported?</h3>
+      <p>CattleCounter requires an iPad with Apple Neural Engine — iPad Pro, iPad Air, or iPad mini from 2019 or later. iOS 17 or later is required.</p>
+    </div>
+
+    <div class="card">
+      <h3>Does CattleCounter upload my images anywhere?</h3>
+      <p>No. Your images never leave your device. All processing is done locally on your iPad. CattleCounter does not collect, transmit, or store any image or location data.</p>
+    </div>
+
+    <h2 style="margin-top: 32px;">Contact Support</h2>
+    <div class="contact-box">
+      <p>Can't find what you're looking for? Send us an email and we'll get back to you within 1–2 business days.</p>
+      <a href="mailto:support@cattlecounter.app">support@cattlecounter.app</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2026 David Tschetter &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
